@@ -28,7 +28,7 @@
 
                             @if (Route::has('login'))
                             @auth
-                            <li class="nav-item"><a href="{{url('mycart')}}"><i class="fas fa-shopping-bag"></i>
+                            <li class="nav-item"><a href="{{url('mycart')}}"><i class="fas fa-cart-arrow-down"></i>
                             [{{$count}}]</a></li>
                             <li class="scroll-to-section"><a href="{{url('myorder')}}">Pesanan</a></li>
                             <form method="POST" action="{{ route('logout') }}">

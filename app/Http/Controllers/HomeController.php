@@ -19,17 +19,14 @@ class HomeController extends Controller
     {
         $produk = Produk::all();
 
-        if(Auth::id())
-        {
-        $user = Auth::user();
-        $userid = $user->id;
-        $count = Cart::where('user_id',$userid)->count();
-        }
-        else
-        {
+        if (Auth::id()) {
+            $user = Auth::user();
+            $userid = $user->id;
+            $count = Cart::where('user_id', $userid)->count();
+        } else {
             $count = '';
         }
-        return view('home.index',compact('produk','count'));
+        return view('home.index', compact('produk', 'count'));
     }
 
     public function login_home()
@@ -37,24 +34,21 @@ class HomeController extends Controller
         $produk = Produk::all();
         $user = Auth::user();
         $userid = $user->id;
-        $count = Cart::where('user_id',$userid)->count();
-        return view('home.index',compact('produk','count'));
+        $count = Cart::where('user_id', $userid)->count();
+        return view('home.index', compact('produk', 'count'));
     }
 
     public function produk_details($id)
     {
         $data = Produk::find($id);
-if(Auth::id())
-        {
-        $user = Auth::user();
-        $userid = $user->id;
-        $count = Cart::where('user_id',$userid)->count();
-        }
-        else
-        {
+        if (Auth::id()) {
+            $user = Auth::user();
+            $userid = $user->id;
+            $count = Cart::where('user_id', $userid)->count();
+        } else {
             $count = '';
         }
-        return view('home.produk_details',compact('data','count'));
+        return view('home.produk_details', compact('data', 'count'));
     }
 
     public function add_cart($id)
@@ -62,29 +56,25 @@ if(Auth::id())
         $produk_id = $id;
         $user = Auth::user();
         $user_id = $user->id;
-        $data = new Cart;
+        $data = new Cart();
         $data->user_id = $user_id;
         $data->produk_id = $produk_id;
         $data->save();
         return redirect()->back();
     }
 
-
     public function mycart()
     {
-
-        if(Auth::id())
-        {
-        $user = Auth::user();
-        $userid = $user->id;
-        $count = Cart::where('user_id',$userid)->count();
-        $cart = Cart::where('user_id',$userid)->get();
-
+        if (Auth::id()) {
+            $user = Auth::user();
+            $userid = $user->id;
+            $count = Cart::where('user_id', $userid)->count();
+            $cart = Cart::where('user_id', $userid)->get();
         }
-        return view('home.mycart',compact('count','cart'));
+        return view('home.mycart', compact('count', 'cart'));
     }
 
-        public function delete_cart($id)
+    public function delete_cart($id)
     {
         $data = Cart::find($id);
 
@@ -110,7 +100,7 @@ if(Auth::id())
 
         // Proses setiap item keranjang sebagai order baru
         foreach ($cart as $carts) {
-            $order = new Order;
+            $order = new Order();
             $order->name = $name;
             $order->rec_address = $address;
             $order->phone = $phone;
@@ -136,11 +126,11 @@ if(Auth::id())
         return redirect()->back()->with('success', 'Pesanan Anda berhasil dikonfirmasi!');
     }
 
-        public function myorder()
+    public function myorder()
     {
         $user = Auth::user()->id;
-        $count = Cart::where('user_id',$user)->get()->count();
-        $order = Order::where('user_id',$user)->get();
-        return view('home.order',compact('count','order'));
+        $count = Cart::where('user_id', $user)->get()->count();
+        $order = Order::where('user_id', $user)->get();
+        return view('home.order', compact('count', 'order'));
     }
 }

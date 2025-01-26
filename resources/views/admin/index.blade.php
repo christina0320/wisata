@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+        body {
+    background-color: #C47A39; /* Warna krem tua */
+    }
+    </style>
 @include('admin.css')
   </head>
   <body>

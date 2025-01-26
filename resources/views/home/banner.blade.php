@@ -45,7 +45,7 @@
 </style>
 
 <div class="main-banner" id="top">
-    <img src="{{ asset('assets/images/gallery/gallery-1.jpg') }}" alt="Banner Image">
+    <img src="{{ asset('assets/images/gallery/gallery-1.jpeg') }}" alt="Banner Image">
     <div class="inner-content">
         <h3>Pesan Sekarang</h3>
         <h3>Restoran Ruang Saji</h3>

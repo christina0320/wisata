@@ -13,6 +13,9 @@
             margin: 60px;
 
         }
+        body {
+    background-color: #C47A39; /* Warna krem tua */
+    }
 
         table {
             border: 2px solid black;
@@ -87,14 +90,14 @@ https://templatemo.com/tm-571-hexashop
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="index.html" class="logo">
-                            <img src="assets/images/logo.png">
+                            {{-- <img src="assets/images/logo.png"> --}}
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="#kids">Informasi Produk</a></li>
-                            <li class="scroll-to-section"><a href="#women">Goodie Bag</a></li>
+                            <li class="scroll-to-section"><a href="#kids">Informasi Menu</a></li>
+                            <li class="scroll-to-section"><a href="#women">Menu</a></li>
 
                             @if (Route::has('login'))
                                 @auth

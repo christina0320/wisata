@@ -6,6 +6,11 @@
 
 @include('home.css')
     <style type="text/css">
+
+
+body {
+    background-color: #C47A39; /* Warna krem tua */
+    }
         .div_deg
         {
             display: flex;
@@ -68,11 +73,14 @@ https://templatemo.com/tm-571-hexashop
 @include('home.header')
     <!-- ***** Header Area End ***** -->
 
-<br> <br><br>
-
 <div class="div_deg">
 
 <div class="odrer_deg">
+    <div class="main-banner" id="top">
+        <img src="{{ asset('assets/images/gallery/reserved.png') }}" width="450" alt="Banner Image">
+        <div class="inner-content">
+        </div>
+    </div>
     <form action="{{url('confirm_order')}}" method="post">
         @csrf
         <div class="div_gap">
