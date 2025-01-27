@@ -1,4 +1,51 @@
+<style>
+    #women {
+    background-color: #c47a39; /* Warna latar belakang cokelat oranye kemerahan */
+    padding: 50px 0; /* Memberikan jarak padding pada atas dan bawah */
+}
+
+#women .section-heading h2 {
+    color: #fff; /* Warna teks heading putih untuk kontras */
+}
+
+#women .item {
+    background-color: #fff; /* Memberikan latar belakang putih pada item menu */
+    padding: 20px;
+    border-radius: 8px; /* Memberikan sudut melengkung pada item */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk efek kedalaman */
+}
+
+#women .item .thumb img {
+    width: 100%; /* Mengatur lebar gambar agar responsif */
+    border-radius: 8px; /* Menambahkan sudut melengkung pada gambar */
+}
+
+#women .down-content h4 {
+    color: #333; /* Warna teks untuk judul produk */
+    font-size: 1.25rem;
+}
+
+#women .down-content span {
+    color: #888; /* Warna teks untuk harga dan stok */
+    font-size: 1rem;
+}
+
+#women .down-content .btn {
+    background-color: #c47a39; /* Warna tombol yang sama dengan background section */
+    color: #fff; /* Teks tombol putih */
+    border: none; /* Menghilangkan border default */
+    padding: 10px 15px;
+    border-radius: 5px; /* Memberikan sudut melengkung pada tombol */
+    text-decoration: none;
+}
+
+#women .down-content .btn:hover {
+    background-color: #a1672d; /* Warna tombol lebih gelap saat hover */
+}
+
+</style>
 <!-- ***** Women Area Starts ***** -->
+
 <section class="section" id="women">
     <div class="container">
         <div class="row">

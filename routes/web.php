@@ -28,6 +28,10 @@ route::get('admin/dashboard',[HomeController::class, 'index']);
 
 route::get('view_product',[AdminController::class, 'index']);
 
+route::get('user',[AdminController::class, 'user']);
+route::get('meja',[AdminController::class, 'meja']);
+route::get('reservasi',[AdminController::class, 'reservasi']);
+
 route::post('add_product',[AdminController::class, 'add_product']);
 
 route::get('delete_category/{id}',[AdminController::class, 'delete_category']);
@@ -45,6 +49,7 @@ route::get('produk_details/{id}',[HomeController::class, 'produk_details']);
 route::get('add_cart/{id}',[HomeController::class, 'add_cart'])->middleware(['auth', 'verified']);
 
 route::get('mycart',[HomeController::class, 'mycart'])->middleware(['auth', 'verified']);
+route::get('reservasii',[HomeController::class, 'reservasii'])->middleware(['auth', 'verified']);
 
 
 route::get('delete_cart/{id}',[AdminController::class, 'delete_cart'])->middleware(['auth', 'verified']);

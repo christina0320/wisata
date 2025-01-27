@@ -86,4 +86,17 @@ class AdminController extends Controller
         $data = Order::all();
         return view('admin.order',compact('data'));
     }
+
+    public function user()
+    {
+        return view('admin.user');
+    }
+    public function meja()
+    {
+        return view('admin.meja');
+    }
+    public function reservasi()
+    {
+        return view('admin.reservasi');
+    }
 }

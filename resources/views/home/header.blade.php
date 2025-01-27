@@ -23,7 +23,7 @@
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="#kids">Tentang Kami</a></li>
+                            <li class="scroll-to-section"><a href="#kids">Reservasi</a></li>
                             <li class="scroll-to-section"><a href="#women">Menu</a></li>
 
                             @if (Route::has('login'))

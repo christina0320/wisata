@@ -49,6 +49,6 @@
     <div class="inner-content">
         <h3>Pesan Sekarang</h3>
         <h3>Restoran Ruang Saji</h3>
-        <a href="#" class="btn btn-light">Reservasi</a>
+        <a href="#kids" class="btn btn-light">Reservasi</a>
     </div>
 </div>

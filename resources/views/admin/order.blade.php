@@ -79,7 +79,7 @@
                         <th>Nama</th>
                         <th>Alamat</th>
                         <th>No HP</th>
-                        <th>Nama Produk</th>
+                        <th>Nama Menu</th>
                         <th>Harga</th>
                         <th>Gambar</th>
                         <th>Status</th>
