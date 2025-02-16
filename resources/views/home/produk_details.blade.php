@@ -4,6 +4,7 @@
   <head>
 
       <!-- Additional CSS Files -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.css">
@@ -14,7 +15,24 @@
 
     <link rel="stylesheet" href="/assets/css/lightbox.css">
 
+
     <style>
+
+
+.rating {
+      color: #ffc107; /* Warna kuning untuk bintang terisi */
+    }
+    .rating .fa-star {
+      font-size: 1.5rem; /* Ukuran ikon bintang */
+    }
+    .rating .fa-star.checked {
+      color: #ffc107; /* Warna kuning untuk bintang terisi */
+    }
+    .rating .fa-star.unchecked {
+      color: #ccc; /* Warna abu-abu untuk bintang kosong */
+    }
+
+
         .div_center{
             display: flex;
             justify-content: center;
@@ -48,18 +66,18 @@
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="index.html" class="logo">
-                            <img src="/assets/images/logo.png">
+                            <img src="/assets/images/logo10.png" width="80">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="#men">Informasi Produk</a></li>
-                            <li class="scroll-to-section"><a href="#women">Bigger Printing</a></li>
+                            <li class="scroll-to-section"><a href="{{ url('/') }}" class="active">Home</a></li>
+                            {{-- <li class="scroll-to-section"><a href="#men">Informasi Produk</a></li> --}}
+                            <li class="scroll-to-section"><a href="#women">Destinasi Wisata</a></li>
                         @if (Route::has('login'))
 
                         @auth
-                            <li class="scroll-to-section"><a href="">Keranjang[{{$count}}]</a></li>
+                            <li class="scroll-to-section"><a href="">Pesanan[{{$count}}]</a></li>
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
 
@@ -96,44 +114,49 @@
                 </div>
             </div>
         </div>
-        <h1 class="d-flex justify-content-center align-items-center">Detail Produk</h1>
+        <h1 class="d-flex justify-content-center align-items-center">Detail Destinasi Wisata</h1>
         <br><br><br>
         <div class="container">
             <div class="row">
 <div class="media">
 
-<img style="width: 270px" src="/produk/{{$data->image}}" alt="">
+<img style="width: 400px" src="/produk/{{$data->image}}" alt="">
 
   <div class="media-body">
       <div class="details_box">
           <h5 class="mt-0">{{$data->title}}</h5>
                                     <span>Harga: {{$data->price}}</span> <br>
-                                    <span>Stok: {{$data->quantity}}</span> <br>
-                                    <label for="ukuran">Pilih Ukuran:</label> <br>
-        <select id="ukuran" name="ukuran" style="width: 200px;">
-            <option value="s"></option>
-            <option value="s">15cm x 25cm</option>
-            <option value="m">30cm x 35cm</option>
-            <option value="l">40cm x 45cm</option>
-            <option value="xl">40cm x 50cm</option>
-            <option value="xl">45cm x 50cm</option>
-            <option value="xl">50cm x 50cm</option>
-            <option value="xl">50cm x 60cm</option>
-        </select>
-                                    <h4>{{$data->category}}</h4>
-                                    <span>Bahan: SpoundBound</span> <br>
-                                    <span>Ukuran: 30cm x 40cm</span> <br>
-                                    <span>Tebal Bahan: 75gr</span> <br>
-                                    <label for="jumlah">Jumlah:</label>
-                                    <input type="number" id="jumlah" name="jumlah" min="" value=""> <br>
+                                    {{-- <span>Stok: {{$data->quantity}}</span> <br> --}}
+                                    {{-- <label for="ukuran">Pilih Ukuran:</label> <br> --}}
 
-                                    <span>Deskripsi: {{$data->description}}</span> <br>
+                                    <h4>{{$data->category}}</h4>
+                                    {{-- <span>Bahan: SpoundBound</span> <br> --}}
+                                    {{-- <span>Ukuran: 30cm x 40cm</span> <br> --}}
+                                    {{-- <span>Tebal Bahan: 75gr</span> <br> --}}
+                                    {{-- <label for="jumlah">Jumlah:</label> --}}
+                                    {{-- <input type="number" id="jumlah" name="jumlah" min="" value=""> <br> --}}
+
+                                    <span><i class="fas fa-map-marker-alt location-icon"></i> {{$data->quantity}}</span> <br>
+                                    <div class="rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                    <br>
+                                    <span>Detail</span> <br> <br>
+                                    <span>{{$data->description}}</span> <br>
                                 </div>
   </div>
 </div>
 <div>
-<a class="btn btn-primary position-relative custom-btn" href="">Kembali</a>
-<a class="btn btn-primary position-relative custom-btn" href="">Beli</a>
+    <a class="btn btn-primary position-relative custom-btn" href="{{ url('/') }}">
+        <i class="fas fa-arrow-left"></i> Kembali <!-- Ikon panah kiri -->
+    </a>
+    {{-- <a class="btn btn-primary position-relative custom-btn" href="">
+        <i class="fas fa-shopping-cart"></i> Pesan <!-- Ikon keranjang belanja -->
+    </a> --}}
 </div>
 
                 <div class="col-12">

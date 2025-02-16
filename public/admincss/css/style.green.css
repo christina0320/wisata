@@ -202,7 +202,7 @@ pre {
 
 .block {
     padding: 20px;
-    background: #C47A39;
+    background: #2d3035;
     color: #C47A39;
     margin-bottom: 30px;
 }
@@ -238,7 +238,7 @@ pre {
 
 .page-header {
     padding: 20px 15px;
-    background: #C47A39;
+    background: #2d3035;
     color: #C47A39;
     margin-bottom: 30px;
 }
@@ -260,7 +260,7 @@ pre {
     color: #C47A39;
     font-size: 1rem;
     min-width: 200px;
-    background: #C47A39;
+    background: #2d3035;
     border-radius: 0;
     padding: 0;
     /*margin-top: 21px;*/
@@ -397,7 +397,7 @@ i[class*="icon-"] {
 * ==========================================================
 */
 nav.navbar {
-    background: #C47A39;
+    background: #2d3035;
     color: #C47A39;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -718,7 +718,7 @@ nav.navbar .dropdown .dropdown-menu.active {
 */
 nav#sidebar {
     width: 280px;
-    background: #C47A39;
+    background: #2d3035;
     color: #6a6c70;
     border-right: 1px solid #34373d;
     /* shrinked navbar */
@@ -996,7 +996,7 @@ nav#sidebar.shrinked a[aria-expanded="true"]::after {
 /* Statistic Block */
 .statistic-block {
     padding: 20px;
-    background: #C47A39;
+    background: #2d3035;
     color: #C47A39;
 }
 
@@ -1542,7 +1542,7 @@ nav#sidebar.shrinked a[aria-expanded="true"]::after {
 
 .modal-open .modal .modal-content {
     border-radius: 0;
-    background: #C47A39;
+    background: #2d3035;
 }
 
 .modal-open .modal .modal-header,
@@ -1620,7 +1620,7 @@ nav#sidebar.shrinked a[aria-expanded="true"]::after {
 }
 
 .login-page .form-holder .form {
-    background: #C47A39;
+    background: #2d3035;
 }
 
 .login-page .form-holder .form .form-group {
@@ -3576,6 +3576,6 @@ pre code {
 }
 
 .card .list-group-item {
-    background: #C47A39;
+    background: #2d3035;
     border-color: #34373d;
 }

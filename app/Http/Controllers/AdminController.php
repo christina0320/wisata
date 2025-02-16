@@ -91,12 +91,8 @@ class AdminController extends Controller
     {
         return view('admin.user');
     }
-    public function meja()
+    public function ulasan()
     {
-        return view('admin.meja');
-    }
-    public function reservasi()
-    {
-        return view('admin.reservasi');
+        return view('admin.ulasan');
     }
 }

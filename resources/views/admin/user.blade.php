@@ -42,12 +42,6 @@
                 <td>user@gmail.com</td>
                 <td>active</td>
               </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>karin</td>
-                <td>karin@gmail.com</td>
-                <td>Active</td>
-              </tr>
             </tbody>
           </table>
 

@@ -76,11 +76,11 @@
             <div class="div_deg">
                 <table>
                     <tr>
-                        <th>Nama Produk</th>
+                        <th>Nama Destinasi</th>
                         <th>Deskripsi</th>
                         <th>Harga</th>
                         <th>Kategori</th>
-                        <th>Stok</th>
+                        <th>Lokasi</th>
                         <th>Gambar</th>
                         <th>Aksi</th>
                     </tr>

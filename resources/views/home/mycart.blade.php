@@ -9,7 +9,7 @@
 
 
 body {
-    background-color: #C47A39; /* Warna krem tua */
+    background-color: #ffff; /* Warna krem tua */
     }
         .div_deg
         {
@@ -77,7 +77,7 @@ https://templatemo.com/tm-571-hexashop
 
 <div class="odrer_deg">
     <div class="main-banner" id="top">
-        <img src="{{ asset('assets/images/gallery/reserved.png') }}" width="450" alt="Banner Image">
+        <img src="{{ asset('assets/images/gallery/banner.jpg') }}" width="450" alt="Banner Image">
         <div class="inner-content">
         </div>
     </div>
@@ -96,7 +96,7 @@ https://templatemo.com/tm-571-hexashop
             <input type="text" name="phone" value="{{Auth::user()->phone}}">
         </div>
         <div class="div_gap">
-            <input class="btn btn-primary" type="submit" value="Place Order" id="">
+            <input class="btn btn-primary" type="submit" value="Pesan" id="">
         </div>
     </form>
 </div>
@@ -104,7 +104,7 @@ https://templatemo.com/tm-571-hexashop
 
     <table>
         <tr>
-            <th>Nama Menu</th>
+            <th>Nama Destinasi</th>
             <th>Harga</th>
             <th>Gambar</th>
             <th>Hapus</th>

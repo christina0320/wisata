@@ -60,7 +60,7 @@
 <form action="{{url('/upload_produk')}}" method="Post" enctype="multipart/form-data">
 @csrf
     <div class="">
-        <label for="">Nama Produk</label>
+        <label for="">Nama Destinasi</label>
         <input type="text" name="title" required>
     </div>
     <div class="">
@@ -68,11 +68,11 @@
         <textarea name="description" id="" cols="30"></textarea>
     </div>
     <div class="">
-        <label for="">Price</label>
+        <label for="">Harga</label>
         <input type="number" name="price" required>
     </div>
     <div class="">
-        <label for="">Category</label>
+        <label for="">kategori</label>
         <select name="product" required>
             <option>Select a Option</option>
             @foreach ($product as $product)
@@ -81,15 +81,15 @@
         </select>
     </div>
     <div class="">
-        <label for="">Quantity</label>
+        <label for="">Lokasi</label>
         <input type="text" name="quantity" required>
     </div>
     <div class="input_deg">
-        <label for="">Gambar Produk</label>
+        <label for="">Gambar Destinasi</label>
         <input type="file" name="image" required>
     </div>
     <div class="">
-        <input class="btn btn-success" type="submit" value="Add Produk">
+        <input class="btn btn-success" type="submit" value="Add Destinasi">
     </div>
 
 </form>

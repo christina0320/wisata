@@ -8,7 +8,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image: url('{{ asset('assets/images/gallery/gallery-1.jpeg') }}');
+            background-image: url('{{ asset('assets/images/gallery/banner.jpg') }}');
             background-size: cover;
             background-position: center;
             font-family: 'Poppins', sans-serif;
@@ -93,7 +93,7 @@
     </style>
 
     <div class="register">
-        <h1>Create an Account</h1>
+        <h1>Daftar Akun</h1>
 
         <form method="POST" action="{{ route('register') }}">
             @csrf

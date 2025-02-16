@@ -14,7 +14,7 @@
 
         }
         body {
-    background-color: #C47A39; /* Warna krem tua */
+    background-color: #ffff; /* Warna krem tua */
     }
 
         table {
@@ -156,7 +156,7 @@ https://templatemo.com/tm-571-hexashop
                     <small class="form-text text-muted">Unggah file gambar bukti transfer (format: JPG, PNG, atau JPEG).</small>
                 </div>
                 <div class="text-center mt-3">
-                    <button type="submit" class="btn btn-primary btn-block">Place Order</button>
+                    <button type="submit" class="btn btn-primary btn-block">Kirim</button>
                 </div>
             </form>
         </div>

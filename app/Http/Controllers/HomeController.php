@@ -123,7 +123,7 @@ class HomeController extends Controller
         Cart::where('user_id', $userid)->delete();
 
         // Redirect dengan pesan sukses
-        return redirect()->back()->with('success', 'Pesanan Anda berhasil dikonfirmasi!');
+        return redirect('/invoice')->with('success', 'Pesanan Anda berhasil dikonfirmasi!');
     }
 
     public function myorder()
@@ -137,5 +137,10 @@ class HomeController extends Controller
     public function reservasii()
     {
         return view('home.reservasi');
+    }
+
+    public function invoice()
+    {
+        return view('home.invoice');
     }
 }

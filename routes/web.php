@@ -25,12 +25,13 @@ require __DIR__.'/auth.php';
 
 
 route::get('admin/dashboard',[HomeController::class, 'index']);
+route::get('/invoice',[HomeController::class, 'invoice']);
 
 route::get('view_product',[AdminController::class, 'index']);
 
 route::get('user',[AdminController::class, 'user']);
-route::get('meja',[AdminController::class, 'meja']);
-route::get('reservasi',[AdminController::class, 'reservasi']);
+route::get('ulasan',[AdminController::class, 'ulasan']);
+// route::get('reservasi',[AdminController::class, 'reservasi']);
 
 route::post('add_product',[AdminController::class, 'add_product']);
 
@@ -60,6 +61,9 @@ route::get('view_order',[AdminController::class, 'view_order']);
 
 route::get('myorder',[HomeController::class, 'myorder'])->middleware(['auth', 'verified']);
 
+use App\Http\Controllers\ReservationController;
+
+Route::post('/submit-reservation', [ReservationController::class, 'store'])->name('reservation.store');
 
 
 

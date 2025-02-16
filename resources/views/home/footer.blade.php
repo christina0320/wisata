@@ -1,27 +1,30 @@
 <div class="container">
     <div class="row">
-        <!-- Informasi Restoran -->
+        <!-- Informasi Destinasi Wisata Ambon -->
         <div class="col-lg-3">
             <div class="first-item">
                 <div class="logo">
-                    <img src="" alt="Restoran Ruang Saji Logo">
+                    <img src="{{ asset('assets/images/logo10.png') }}" width="80" alt="Logo Wisata Ambon">
                 </div>
                 <ul>
-                    <li><a href="#">Jalan Raya 123, Jakarta, Indonesia</a></li>
-                    <li><a href="#">info@ruangsaji.com</a></li>
-                    <li><a href="#">+62 812-3456-7890</a></li>
+                    <li><a href="#">Jalan Pattimura No. 45, Ambon, Maluku, Indonesia</a></li>
+                    <li><a href="#">info@wisataambon.com</a></li>
+                    <li><a href="#">+62 82198468727 : Christina</a></li>
+                    <li><a href="#">+62 81248603463 : Marlin</a></li>
+                    <li><a href="#">+62 85272957993 : Siswandi</a></li>
+                    <li><a href="#">+62 82278145215 : Saul</a></li>
                 </ul>
             </div>
         </div>
 
-        <!-- Menu Restoran -->
+        <!-- Destinasi Wisata Populer -->
         <div class="col-lg-3">
-            <h4>Menu &amp; Kategori</h4>
+            <h4>Destinasi Wisata</h4>
             <ul>
-                <li><a href="#">Menu Makanan</a></li>
-                <li><a href="#">Menu Minuman</a></li>
-                <li><a href="#">Dessert</a></li>
-                <li><a href="#">Paket Spesial</a></li>
+                <li><a href="#">Pantai Natsepa</a></li>
+                <li><a href="#">Benteng Victoria</a></li>
+                <li><a href="#">Pulau Pombo</a></li>
+                <li><a href="#">Pemandian Air Panas Tulehu</a></li>
             </ul>
         </div>
 
@@ -30,20 +33,20 @@
             <h4>Tautan Berguna</h4>
             <ul>
                 <li><a href="#">Beranda</a></li>
-                <li><a href="#">Tentang Kami</a></li>
-                <li><a href="#">Reservasi</a></li>
+                <li><a href="#">Tentang Ambon</a></li>
+                <li><a href="#">Paket Wisata</a></li>
                 <li><a href="#">Hubungi Kami</a></li>
             </ul>
         </div>
 
-        <!-- Bantuan & Informasi -->
+        <!-- Informasi Tambahan -->
         <div class="col-lg-3">
-            <h4>Bantuan &amp; Informasi</h4>
+            <h4>Informasi & Bantuan</h4>
             <ul>
-                <li><a href="#">Bantuan</a></li>
+                <li><a href="#">Panduan Wisata</a></li>
                 <li><a href="#">FAQ</a></li>
-                <li><a href="#">Lokasi & Jam Buka</a></li>
-                <li><a href="#">Lacak Reservasi</a></li>
+                <li><a href="#">Transportasi di Ambon</a></li>
+                <li><a href="#">Lacak Paket Wisata</a></li>
             </ul>
         </div>
     </div>

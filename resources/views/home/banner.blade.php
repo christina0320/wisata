@@ -45,10 +45,10 @@
 </style>
 
 <div class="main-banner" id="top">
-    <img src="{{ asset('assets/images/gallery/gallery-1.jpeg') }}" alt="Banner Image">
+    <img src="{{ asset('assets/images/gallery/banner.jpg') }}" alt="Banner Image">
     <div class="inner-content">
-        <h3>Pesan Sekarang</h3>
-        <h3>Restoran Ruang Saji</h3>
-        <a href="#kids" class="btn btn-light">Reservasi</a>
+        <h3>Temukan tempat destinasi wisata</h3>
+        <h3>sesuai dengan yang anda inginkan</h3>
+        <a href="#women" class="btn btn-light"><i class="fas fa-shopping-cart"></i>Pesan</a>
     </div>
 </div>

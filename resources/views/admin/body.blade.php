@@ -21,7 +21,7 @@
                 <div class="statistic-block block">
                   <div class="progress-details d-flex align-items-end justify-content-between">
                     <div class="title">
-                      <div class="icon"><i class="icon-contract"></i></div><strong>Menu</strong>
+                      <div class="icon"><i class="icon-contract"></i></div><strong>Destinasi Wisata</strong>
                     </div>
                     <div class="number dashtext-2">375</div>
                   </div>
@@ -47,7 +47,7 @@
                 <div class="statistic-block block">
                   <div class="progress-details d-flex align-items-end justify-content-between">
                     <div class="title">
-                      <div class="icon"><i class="icon-writing-whiteboard"></i></div><strong>Reservasi</strong>
+                      <div class="icon"><i class="icon-writing-whiteboard"></i></div><strong>Ulasan</strong>
                     </div>
                     <div class="number dashtext-4">41</div>
                   </div>

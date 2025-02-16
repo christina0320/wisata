@@ -2,6 +2,9 @@
 <html>
   <head>
     <style type="text/css">
+    body{
+        background-color: #ffff; /* Warna krem tua */
+    }
          .div_deg
         {
             display: flex;
@@ -79,7 +82,7 @@
                         <th>Nama</th>
                         <th>Alamat</th>
                         <th>No HP</th>
-                        <th>Nama Menu</th>
+                        <th>Nama Destinasi</th>
                         <th>Harga</th>
                         <th>Gambar</th>
                         <th>Status</th>

@@ -8,28 +8,44 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image: url('{{ asset('assets/images/gallery/gallery-1.jpeg') }}');
+            background-image: url('{{ asset('assets/images/gallery/banner.jpg') }}');
             background-size: cover;
             background-position: center;
-            font-family: 'Poppins', sans-serif; /* Menggunakan font modern */
+            font-family: 'Poppins', sans-serif;
             color: #fff;
+            overflow: hidden;
         }
 
         .login {
-            background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Lembutkan bayangan */
-            width: 100%;
-            max-width: 400px;
+            background: rgba(0, 0, 0, 0.7); /* Latar belakang semi-transparan */
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+            width: 90%; /* Lebar card 90% dari parent */
+            max-width: 400px; /* Lebar maksimum card */
             text-align: center;
+            backdrop-filter: blur(10px); /* Efek blur untuk latar belakang */
+            border: 1px solid rgba(255, 255, 255, 0.1); /* Border transparan */
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         h1 {
-            font-size: 36px;
+            font-size: 32px; /* Ukuran font yang lebih kecil */
             margin-bottom: 20px;
-            font-weight: bold;
-            color: #f5f5f5;
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
 
         .login form {
@@ -41,19 +57,20 @@
         .login input[type="email"],
         .login input[type="password"],
         .login button {
-            width: calc(100% - 20px); /* Sesuaikan dengan form */
-            padding: 10px;
-            margin: 10px auto;
-            border-radius: 8px;
+            width: 100%; Lebar input dan tombol 100% dari form
+            padding: 12px;
+            margin: 10px 0; /* Margin atas dan bawah */
+            border-radius: 10px;
             border: none;
             font-size: 16px;
+            transition: all 0.3s ease;
         }
 
         .login input[type="email"],
         .login input[type="password"] {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.1); /* Input transparan */
             color: #fff;
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .login input[type="email"]::placeholder,
@@ -61,17 +78,25 @@
             color: #dcdcdc;
         }
 
+        .login input[type="email"]:focus,
+        .login input[type="password"]:focus {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.4);
+            outline: none;
+        }
+
         .login button {
-            background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradasi warna */
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
             color: #fff;
-            font-weight: bold;
+            font-weight: 600;
             cursor: pointer;
-            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
 
         .login button:hover {
-            background: linear-gradient(135deg, #2575fc, #6a11cb); /* Animasi warna */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(135deg, #2575fc, #6a11cb);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
         }
 
         .forgot-password {
@@ -93,18 +118,19 @@
         .remember-me {
             display: flex;
             align-items: center;
-            margin-top: 10px;
+            margin-top: 15px;
             font-size: 14px;
             color: #dcdcdc;
         }
 
         .remember-me input {
             margin-right: 10px;
+            accent-color: #6a11cb;
         }
     </style>
 
     <div class="login">
-        <h1>Halaman Login</h1>
+        <h1>Masuk</h1>
 
         <!-- Session Status -->
         <x-auth-session-status class="mb-4" :status="session('status')" />

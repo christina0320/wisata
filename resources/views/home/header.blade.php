@@ -23,8 +23,8 @@
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="#kids">Reservasi</a></li>
-                            <li class="scroll-to-section"><a href="#women">Menu</a></li>
+                            <li class="scroll-to-section"><a href="#women">Destinasi Wisata</a></li>
+                            <li class="scroll-to-section"><a href="#kids">Ulasan</a></li>
 
                             @if (Route::has('login'))
                             @auth
